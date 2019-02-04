@@ -1,0 +1,61 @@
+/*初始化*/
+body,ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: rgb(192, 194, 197)
+}
+/*清除浮动*/
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*页面最上方header*/
+header {
+  padding-top: 26px;
+}
+/*页面最上方导航栏*/
+nav.textNavBar {
+  color: rgb(204, 206, 209);
+  padding-top: 8px;
+  padding-bottom: 2px;
+  padding-right: 140px;
+  float: right;
+}
+nav.textNavBar ul {
+  list-style: none;
+}
+nav.textNavBar ul li {
+  font-weight: bold;
+  float: left;
+  padding-bottom: 11px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-bottom: 3px solid transparent;
+}
+nav.textNavBar ul li:hover {
+  border-bottom: 3px solid rgb(232, 103, 107);
+}
+/*页面最上方RS card*/
+.logoDiv {
+  padding-bottom: 9px;
+  padding-left: 193px;
+  float: left;
+}
+Homework-of-XDML/Lesson10/index.htmlspan.card,span.rs {
+  text-decoration: none;
+  font-size: 26px;
+  font-family: 'Arial-Black';
+  font-weight: bolder;
+  opacity: 0.8;
+}
+span.card {
+  color: rgb(154, 157, 162);
+  padding-left: 6px;
+}
+span.rs {
+  color: rgb(232, 103, 107);
+}
