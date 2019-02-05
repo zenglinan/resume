@@ -1,61 +1,83 @@
-/*初始化*/
+@font-face{
+  font-family: 'Fredoka One';
+  src : url('./font/Fredoka-One.ttf');
+}
+@font-face{
+  font-family: 'Open Sans';
+  src : url('./font/OpenSans-Semibold.ttf');
+}
 body,ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 a {
   text-decoration: none;
-  color: rgb(192, 194, 197)
 }
-/*清除浮动*/
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
-/*页面最上方header*/
-header {
-  padding-top: 26px;
+/*顶部header*/
+header.top {
+  z-index: 1;
+  position: fixed;
+  padding-left: 192px;
+  padding-right: 192px;
+  padding-top: 27px;
+  width: 100%;
+  box-sizing: border-box;
 }
-/*页面最上方导航栏*/
-nav.textNavBar {
-  color: rgb(204, 206, 209);
-  padding-top: 8px;
-  padding-bottom: 2px;
-  padding-right: 140px;
-  float: right;
-}
-nav.textNavBar ul {
-  list-style: none;
-}
-nav.textNavBar ul li {
-  font-weight: bold;
-  float: left;
-  padding-bottom: 11px;
-  margin-left: 16px;
-  margin-right: 16px;
-  border-bottom: 3px solid transparent;
-}
-nav.textNavBar ul li:hover {
-  border-bottom: 3px solid rgb(232, 103, 107);
-}
-/*页面最上方RS card*/
+/*RS card标志*/
 .logoDiv {
-  padding-bottom: 9px;
-  padding-left: 193px;
   float: left;
+  padding-bottom: 9px;
 }
-Homework-of-XDML/Lesson10/index.htmlspan.card,span.rs {
-  text-decoration: none;
-  font-size: 26px;
-  font-family: 'Arial-Black';
-  font-weight: bolder;
-  opacity: 0.8;
+.logo span {
+  font-family: 'Fredoka One';
+  font-size: 30px;
 }
-span.card {
-  color: rgb(154, 157, 162);
-  padding-left: 6px;
-}
-span.rs {
+.logo span.rs {
   color: rgb(232, 103, 107);
 }
+.logo span.card {
+  color: rgb(154, 157, 162);
+  padding: 4px;
+}
+/*顶部导航栏*/
+.textNavBar {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  float: right;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+.textNavBar li {
+  float: left;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.textNavBar li a:hover {
+  border-bottom: 3px solid rgb(232, 103, 107);
+}
+.textNavBar li:nth-last-child(1) {
+  padding-right: 0;
+}
+.textNavBar a {
+  color: rgb(204, 202, 203);
+  padding-bottom: 6px;
+}
+/*墨镜背景图*/
+div.bck {
+  height: 516px;
+  background-image: url(./img/rs-cover-2-2-1-1.jpg);
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+div.bck .mask {
+  height: 516px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
