@@ -8,7 +8,14 @@
   <link rel="stylesheet" href="./main.css">
   <title>个人简历</title>
 </head>
-
+<style type="text/css">
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+</style>
 <body>
   <header class="top clearfix">
     <div class="logoDiv"><a href="#" class="logo"><span class="rs">RS</span><span class="card">card</span></a></div>
@@ -26,42 +33,43 @@
     <div class="mask"></div>
   </div>
   <section class="main">
-    <img src="#" alt="我的图片">
-    <div class="message">
-      <span>Hello</span>
-      <p>
-        I'm<b>Datou</b>
-        前端开发学习中
-      </p>
-      <hr>
-      <dl>
-        <dt>Age</dt>
-        <dd>21</dd>
-        <dt>Address</dt>
-        <dd>xxx</dd>
-        <dt>E-mail</dt>
-        <dd>1392767180@qq.com</dd>
-        <dt>Phone</dt>
-        <dd>+86-15521017704</dd>
-        <dt>Freelance</dt>
-        <dd>xxx</dd>
-        <dt>Vacation</dt>
-        <dd>xxx</dd>
-      </dl>
+    <div class="userCard clearfix">
+      <img src="./img/peo.jpg" alt="我的图片" class="avatar">
+      <div class="message">
+        <span class="welcome">HELLO<span class="triangle"></span></span>
+        <p class="resumeP">
+          <span class="iam">I'm</span><span class="name">Datou</span><br>
+          <span class="descript">Front-end Beginner</span>
+        </p>
+        <hr class="cardHr">
+        <dl class="messageList clearfix">
+          <dt>Age</dt>
+          <dd>21</dd>
+          <dt>City</dt>
+          <dd>Guangzhou</dd>
+          <dt>E-mail</dt>
+          <dd>1392767180@qq.com</dd>
+          <dt>Phone</dt>
+          <dd>+86-15521017704</dd>
+        </dl>
+      </div>
     </div>
-    <nav>
-      <ul class="logoNavBar">
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
+    <nav class="logoNavBar">
+      <a href="#">
+        <img src="./img/github (1).png" alt="github">
+      </a>
+      <a href="#">
+        <img src="./img/微博 (1).png" alt="weibo">
+      </a>
+      <a href="#">
+        <img src="./img/知乎 (1).png" alt="zhihu">
+      </a>
+      <a href="#">
+        <img src="./img/验证-简书 (1).png" alt="jianshu">
+      </a>
     </nav>
   </section>
   <button class="download"></button>
   <p>曾宝浩, 学习前端ing</p>
 </body>
-
 </html>

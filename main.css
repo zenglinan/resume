@@ -6,6 +6,10 @@
   font-family: 'Open Sans';
   src : url('./font/OpenSans-Semibold.ttf');
 }
+@font-face{
+  font-family: 'Open Sans Light';
+  src : url('./font/OpenSans-Light.ttf');
+}
 body,ul {
   margin: 0;
   padding: 0;
@@ -23,61 +27,165 @@ a {
 header.top {
   z-index: 1;
   position: fixed;
-  padding-left: 192px;
-  padding-right: 192px;
-  padding-top: 27px;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  padding-top: 1.6875rem;
   width: 100%;
   box-sizing: border-box;
 }
 /*RS card标志*/
 .logoDiv {
   float: left;
-  padding-bottom: 9px;
+  padding-bottom: .5625rem;
 }
 .logo span {
   font-family: 'Fredoka One';
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .logo span.rs {
   color: rgb(232, 103, 107);
 }
 .logo span.card {
   color: rgb(154, 157, 162);
-  padding: 4px;
+  padding: .25rem;
 }
 /*顶部导航栏*/
 .textNavBar {
   font-family: 'Open Sans';
-  font-size: 13px;
+  font-size: .8125rem;
   float: right;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  padding-top: .625rem;
+  padding-bottom: .5rem;
 }
 .textNavBar li {
   float: left;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 1.0625rem;
+  padding-right: 1.0625rem;
 }
 .textNavBar li a:hover {
-  border-bottom: 3px solid rgb(232, 103, 107);
+  border-bottom: .1875rem solid rgb(232, 103, 107);
 }
 .textNavBar li:nth-last-child(1) {
   padding-right: 0;
 }
 .textNavBar a {
   color: rgb(204, 202, 203);
-  padding-bottom: 6px;
+  padding-bottom: .375rem;
 }
 /*墨镜背景图*/
 div.bck {
-  height: 516px;
+  height: 32.25rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   background-image: url(./img/rs-cover-2-2-1-1.jpg);
   background-position: center;
   background-size: cover;
   z-index: -1;
 }
 div.bck .mask {
-  height: 516px;
+  height: 32.25rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
+/*个人信息卡片*/
+.main {
+  padding-top: 10.625rem;
+  overflow: hidden;
+  max-width: 58.125rem;
+  margin: 0 auto;
+}
+div.userCard {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 4rem;
+}
+nav.logoNavBar {
+  background-color: rgb(232, 103, 107)
+}
+img.avatar {
+  width: 18.4375rem;
+  height: 19.875rem;
+}
+span.welcome {
+  background-color: rgb(232, 103, 107);
+  padding: .375rem .75rem;
+  position: relative;
+  font-family: 'Open Sans';
+  font-size: .875rem;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  margin-top: 80px;
+}
+p.resumeP {
+  padding-top: 9px;
+}
+span.welcome span.triangle {
+  border: .5rem solid transparent;
+  display: block;
+  width: 0;
+  border-top: 0;
+  border-left-color: rgb(232, 103, 107);
+  position: absolute;
+  top: 100%;
+  left: .25rem;
+}
+div.message {
+  padding-top: .25rem;
+  color: rgb(61, 68, 81);
+  max-width: 29.375rem;
+}
+img.avatar {
+  padding-right: 4rem;
+}
+img.avatar, div.message {
+  float: left;
+}
+div.userCard {
+  padding-top: 3.5rem;
+  padding-left: 3.125rem;
+}
+span.descript {
+  font-size: 1.125rem;
+}
+span.iam {
+  font-family: 'Open Sans Light';
+  padding-right: 1rem;
+  font-weight: 100;
+  font-size: 2.25rem;
+}
+span.name {
+  font-family: 'Open Sans';
+  font-size: 2.25rem;
+}
+hr.cardHr {
+  width: 29.375rem;
+  height: 0;
+  border-top: 1px solid rgb(222, 222, 222);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.messageList dt {
+  float: left;
+  width: 30%;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.messageList dd {
+  margin: 0;
+  float: left;
+  width: 70%;
+  color: #9da0a7;
+  padding-bottom: 12px;
+}
+/*icon*/
+nav.logoNavBar {
+  text-align: center;
+  padding: 1rem 0;
+}
+nav.logoNavBar a {
+  padding: 0 3.6rem;
+}
+nav.logoNavBar img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
