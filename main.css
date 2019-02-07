@@ -1,54 +1,75 @@
-@font-face{
+@font-face {
   font-family: 'Fredoka One';
-  src : url('./font/Fredoka-One.ttf');
+  src: url('./font/Fredoka-One.ttf');
 }
-@font-face{
+
+@font-face {
   font-family: 'Open Sans';
-  src : url('./font/OpenSans-Semibold.ttf');
+  src: url('./font/OpenSans-Semibold.ttf');
 }
-@font-face{
+
+@font-face {
   font-family: 'Open Sans Light';
-  src : url('./font/OpenSans-Light.ttf');
+  src: url('./font/OpenSans-Light.ttf');
 }
-body,ul {
+
+body {
+  background-color: rgb(239, 239, 239);
+}
+
+body,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
+
 /*顶部header*/
 header.top {
   z-index: 1;
   position: fixed;
-  padding-left: 10.4rem;
-  padding-right: 10.575rem;
-  padding-top: 1.6875rem;
+  padding-left: 6.4rem;
+  padding-right: 6.575rem;
+  padding-top: 1.275rem;
+  padding-bottom: 0.725rem;
   width: 100%;
   box-sizing: border-box;
+
 }
+.whiteBar {
+  background-color: rgb(255, 255, 255);
+}
+
 /*RS card标志*/
 .logoDiv {
   float: left;
   padding-bottom: .5625rem;
 }
+
 .logo span {
   font-family: 'Fredoka One';
   font-size: 1.875rem;
 }
+
 .logo span.rs {
   color: rgb(232, 103, 107);
 }
+
 .logo span.card {
   color: rgb(154, 157, 162);
   padding: .25rem;
 }
+
 /*顶部导航栏*/
 .textNavBar {
   font-family: 'Open Sans';
@@ -57,21 +78,26 @@ header.top {
   padding-top: .625rem;
   padding-bottom: .5rem;
 }
+
 .textNavBar li {
   float: left;
   padding-left: 1.0625rem;
   padding-right: 1.0625rem;
 }
+
 .textNavBar li a:hover {
   border-bottom: .1875rem solid rgb(232, 103, 107);
 }
+
 .textNavBar li:nth-last-child(1) {
   padding-right: 0;
 }
+
 .textNavBar a {
   color: rgb(204, 202, 203);
   padding-bottom: .375rem;
 }
+
 /*墨镜背景图*/
 div.bck {
   height: 32.25rem;
@@ -84,28 +110,35 @@ div.bck {
   background-size: cover;
   z-index: -1;
 }
+
 div.bck .mask {
   height: 32.25rem;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
 /*个人信息卡片*/
 .main {
   padding-top: 10.625rem;
   overflow: hidden;
   max-width: 58.125rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 div.userCard {
   background-color: rgb(255, 255, 255);
   padding-bottom: 4rem;
 }
+
 nav.logoNavBar {
   background-color: rgb(232, 103, 107)
 }
+
 img.avatar {
   width: 18.4375rem;
   height: 19.875rem;
 }
+
 span.welcome {
   background-color: rgb(232, 103, 107);
   padding: .375rem .75rem;
@@ -116,9 +149,11 @@ span.welcome {
   color: rgb(255, 255, 255);
   margin-top: 80px;
 }
+
 p.resumeP {
   padding-top: 9px;
 }
+
 span.welcome span.triangle {
   border: .5rem solid transparent;
   display: block;
@@ -129,34 +164,43 @@ span.welcome span.triangle {
   top: 100%;
   left: .25rem;
 }
+
 div.message {
   padding-top: .25rem;
   color: rgb(61, 68, 81);
   max-width: 29.375rem;
 }
+
 img.avatar {
   padding-right: 4rem;
 }
-img.avatar, div.message {
+
+img.avatar,
+div.message {
   float: left;
 }
+
 div.userCard {
   padding-top: 3.5rem;
   padding-left: 3.125rem;
 }
+
 span.descript {
   font-size: 1.125rem;
 }
+
 span.iam {
   font-family: 'Open Sans Light';
   padding-right: 1rem;
   font-weight: 100;
   font-size: 2.25rem;
 }
+
 span.name {
   font-family: 'Open Sans';
   font-size: 2.25rem;
 }
+
 hr.cardHr {
   width: 29.375rem;
   height: 0;
@@ -164,12 +208,14 @@ hr.cardHr {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
 .messageList dt {
   float: left;
   width: 30%;
   font-weight: bold;
   padding-bottom: 10px;
 }
+
 .messageList dd {
   margin: 0;
   float: left;
@@ -177,15 +223,100 @@ hr.cardHr {
   color: #9da0a7;
   padding-bottom: 12px;
 }
+
 /*icon*/
 nav.logoNavBar {
   text-align: center;
   padding: 1rem 0;
 }
+
 nav.logoNavBar a {
   padding: 0 3.6rem;
 }
+
 nav.logoNavBar img {
   width: 1.875rem;
   height: 1.875rem;
+}
+
+/*下载按钮*/
+a.download {
+  border: 1px solid rgb(203, 205, 207);
+  display: inline-block;
+  font-size: 1rem;
+  color: rgb(61, 68, 81);
+  font-family: 'Open Sans';
+  font-weight: bold;
+  padding: 1.3125rem 3.4375rem;
+  transition: box-shadow 0.3s;
+  border-radius: 3px;
+}
+
+div.downloadWrapper {
+  text-align: center;
+  margin-top: 3.3125rem;
+}
+
+a.download:hover {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.36);
+}
+
+p.selfIntroduction {
+  font-family: 'Open Sans Light';
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  max-width: 58.125rem;
+  margin: 1.625rem auto 0 auto;
+  color: #000000;
+  text-align: center;
+}
+
+/*技能条展示*/
+section.skillShow {
+  max-width: 58.125rem;
+  font-size: .875rem;
+  font-family: 'Open Sans';
+  margin: 0 auto;
+}
+section.skillShow h2 {
+  text-align: center;
+  font-size: 2.125rem;
+  font-family: 'Open Sans';
+  padding-top: 2.0625rem;
+  font-weight: bold;
+}
+section.skillShow ul {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.52);
+  margin-bottom: 1rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.6875rem;
+}
+section.skillShow ul li {
+  float: left;
+  width: 50%;
+  padding-bottom: 1.4375rem;
+  box-sizing: border-box;
+}
+section.skillShow ul li:nth-child(odd) {
+  padding-left: 3.125rem;
+}
+section.skillShow ul li:nth-child(even) {
+  padding-left: 1.875rem;
+  padding-right: 3.125rem;
+}
+section.skillShow ul li p {
+  font-size: .875rem;
+  font-family: 'Open Sans Light';
+}
+section.skillShow ul li div.processBar {
+  height: 5px;
+  background-color: rgb(250, 225, 225);
+  border-radius: 2px;
+}
+section.skillShow ul li div.processBar div.process {
+  background-color: rgb(232, 103, 107);
+  height: 100%;
+  width: 50%;
+  border-radius: 2px;
 }
