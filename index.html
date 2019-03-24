@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="./loading.css">
   <link rel="stylesheet" href="./main.css">
   <title>个人简历</title>
 </head>
@@ -19,123 +21,140 @@
 </style>
 
 <body>
-  <header class="top clearfix">
-    <div class="logoDiv"><a href="#" class="logo"><span class="rs">RS</span><span class="card">card</span></a></div>
-    <nav class="textNavBar">
-      <ul class="clearfix">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">EXPERIENCE</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">OTHER</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="bck">
-    <div class="mask"></div>
+  <div id="loading">
+    <p class="welcomeText">Welcome, Teacher Bo</p>
+    <div class="circleWrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
   </div>
-  <section class="main">
-    <div class="userCard clearfix">
-      <img src="./img/peo.jpg" alt="我的图片" class="avatar">
-      <div class="message">
-        <span class="welcome">HELLO<span class="triangle"></span></span>
-        <p class="resumeP">
-          <span class="iam">I'm</span><span class="name">Datou</span><br>
-          <span class="descript">Front-end Beginner</span>
-        </p>
-        <hr class="cardHr">
-        <dl class="messageList clearfix">
-          <dt>Age</dt>
-          <dd>21</dd>
-          <dt>City</dt>
-          <dd>Guangzhou</dd>
-          <dt>E-mail</dt>
-          <dd>1392767180@qq.com</dd>
-          <dt>Phone</dt>
-          <dd>+86-15521017704</dd>
-        </dl>
-      </div>
+  <div class="heightNone" id="siteMain">
+    <header class="top clearfix">
+      <div class="logoDiv"><a href="#" class="logo"><span class="rs">RS</span><span class="card">card</span></a></div>
+      <nav class="textNavBar">
+        <ul class="clearfix">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SKILLS</a></li>
+          <li><a href="#">EXPERIENCE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">OTHER</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="bck">
+      <div class="mask"></div>
     </div>
-    <nav class="logoNavBar">
-      <a href="#">
-        <img src="./img/github (1).png" alt="github">
-      </a>
-      <a href="#">
-        <img src="./img/微博 (1).png" alt="weibo">
-      </a>
-      <a href="#">
-        <img src="./img/知乎 (1).png" alt="zhihu">
-      </a>
-      <a href="#">
-        <img src="./img/验证-简书 (1).png" alt="jianshu">
-      </a>
-    </nav>
-  </section>
-  <div class="downloadWrapper"><a class="download" href="./img/github (1).png" download>DOWNLOAD RESUME</a></div>
-  <p class="selfIntroduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development.
-    Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming
-    languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
-  <section class="skillShow">
-    <h2>Professional Skills</h2>
-    <ul class="clearfix">
-      <li>
-        <p>HTML & CSS</p>
-        <div class="processBar">
-          <div class="process"></div>
-        </div>
-      </li>
-      <li>
-        <p>JavaScript</p>
-        <div class="processBar">
-          <div class="process"></div>
-        </div>
-      </li>
-      <li>
-        <p>jQuery</p>
-        <div class="processBar">
-          <div class="process"></div>
-        </div>
-      </li>
-      <li>
-        <p>React.js</p>
-        <div class="processBar">
-          <div class="process"></div>
-        </div>
-      </li>
-      <li>
-        <p>Vue.js</p>
-        <div class="processBar">
-          <div class="process"></div>
-        </div>
-      </li>
-      <li>
-        <p>Node.js</p>
-        <div class="processBar">
-          <div class="process"></div>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section class="portfolio">
-    <div class="portfolio-top">
-      <h2>Portfolio</h2>
-      <div class="optionBar">
-        <p class="option">
-          <span>All</span>
-          <span>Origin</span>
-          <span>Frame</span>
-        </p>
-        <div class="bar">
-          <div class="bar-inner barStatus1"></div>
+    <section class="main">
+      <div class="userCard clearfix">
+        <img src="./img/peo.jpg" alt="我的图片" class="avatar">
+        <div class="message">
+          <span class="welcome">HELLO<span class="triangle"></span></span>
+          <p class="resumeP">
+            <span class="iam">I'm</span><span class="name">Datou</span><br>
+            <span class="descript">Front-end Beginner</span>
+          </p>
+          <hr class="cardHr">
+          <dl class="messageList clearfix">
+            <dt>Age</dt>
+            <dd>21</dd>
+            <dt>City</dt>
+            <dd>Guangzhou</dd>
+            <dt>E-mail</dt>
+            <dd>1392767180@qq.com</dd>
+            <dt>Phone</dt>
+            <dd>+86-15521017704</dd>
+          </dl>
         </div>
       </div>
-    </div>
-    <div class="picture clearfix">
-      <div class="picLeft"><img src="./img/chair.jpg" alt="chair"></div>
-      <div class="picRight"><img src="./img/watch.jpg" alt="watch"><img src="./img/keyboard.jpg" alt="keyboard"></div>
-    </div>
-  </section>
+      <nav class="logoNavBar">
+        <a href="#">
+          <img src="./img/github (1).png" alt="github">
+        </a>
+        <a href="#">
+          <img src="./img/微博 (1).png" alt="weibo">
+        </a>
+        <a href="#">
+          <img src="./img/知乎 (1).png" alt="zhihu">
+        </a>
+        <a href="#">
+          <img src="./img/验证-简书 (1).png" alt="jianshu">
+        </a>
+      </nav>
+    </section>
+    <div class="downloadWrapper"><a class="download" href="./img/github (1).png" download>DOWNLOAD RESUME</a></div>
+    <p class="selfIntroduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development.
+      Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming
+      languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
+    <section class="skillShow">
+      <h2>Professional Skills</h2>
+      <ul class="clearfix">
+        <li>
+          <p>HTML & CSS</p>
+          <div class="processBar">
+            <div class="process"></div>
+          </div>
+        </li>
+        <li>
+          <p>JavaScript</p>
+          <div class="processBar">
+            <div class="process"></div>
+          </div>
+        </li>
+        <li>
+          <p>jQuery</p>
+          <div class="processBar">
+            <div class="process"></div>
+          </div>
+        </li>
+        <li>
+          <p>React.js</p>
+          <div class="processBar">
+            <div class="process"></div>
+          </div>
+        </li>
+        <li>
+          <p>Vue.js</p>
+          <div class="processBar">
+            <div class="process"></div>
+          </div>
+        </li>
+        <li>
+          <p>Node.js</p>
+          <div class="processBar">
+            <div class="process"></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio-top">
+        <h2>Portfolio</h2>
+        <div class="optionBar">
+          <p class="option">
+            <span>All</span>
+            <span>Origin</span>
+            <span>Frame</span>
+          </p>
+          <div class="bar">
+            <div class="bar-inner barStatus1"></div>
+          </div>
+        </div>
+      </div>
+      <div class="picture clearfix">
+        <div class="picLeft"><img src="./img/chair.jpg" alt="chair"></div>
+        <div class="picRight"><img src="./img/watch.jpg" alt="watch"><img src="./img/keyboard.jpg" alt="keyboard"></div>
+      </div>
+    </section>
+  </div>
 </body>
+<script>
+  // 固定显示加载动画2s
+  setTimeout(function(){
+    loading.classList.add('hide');
+    siteMain.classList.remove('heightNone');
+    siteMain.classList.add('active');
+  },2000)
+</script>
 <script src="./scroll.js"></script>
 <script src="./bar.js"></script>
 </html>

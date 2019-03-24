@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('./font/Fredoka-One.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./font/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url('./font/OpenSans-Light.ttf');
+}
