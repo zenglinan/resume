@@ -18,8 +18,21 @@ header.whiteBar { background-color: rgb(255, 255, 255); box-shadow: 0px 3px 8px 
 .logo span.card { color: rgb(154, 157, 162); padding: .25rem; }
 /*顶部导航栏*/
 .textNavBar { font-family: 'Open Sans'; font-size: .8125rem; float: right; padding-top: .625rem; padding-bottom: .5rem; }
-.textNavBar li { float: left; padding-left: 1.0625rem; padding-right: 1.0625rem; }
-.textNavBar li a:hover { border-bottom: .1875rem solid rgb(232, 103, 107); }
+.textNavBar li { float: left; margin-left: 1.0625rem; margin-right: 1.0625rem; position: relative; }
+.textNavBar li a::after {
+  width: 0;
+  transition: width .3s;
+  display: block;
+  height: .1875rem;
+  content: '';
+  top: 120%;
+  border-radius: 3px;
+  position: absolute;
+}
+.textNavBar li a:hover::after { 
+  width: 100%;
+  background: rgb(232, 103, 107);
+}
 .textNavBar li:nth-last-child(1) { padding-right: 0; }
 .textNavBar a { padding-bottom: .375rem; transition: all .2s; }
 /*墨镜背景图*/
