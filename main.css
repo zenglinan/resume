@@ -3,24 +3,26 @@
   opacity: 0;
   overflow: hidden;
 }
-.heightNone{
+
+.heightNone {
   height: 0;
 }
+
 .active {
   opacity: 1 !important;
 }
+
 .hide {
   display: none !important;
   opacity: 0;
 }
-
-
 
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
+
 body {
   background-color: rgb(239, 239, 239);
 }
@@ -36,8 +38,6 @@ a {
   text-decoration: none;
 }
 
-
-
 /*顶部header*/
 
 header.top {
@@ -52,8 +52,11 @@ header.top {
   transition: all .7s;
 }
 
-.whiteBar {
+header.whiteBar {
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
+  padding-top: 0.4rem;
+  padding-bottom: 0.3rem;
 }
 
 /*RS card标志*/
