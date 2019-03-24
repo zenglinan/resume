@@ -3,7 +3,24 @@
   opacity: 0;
   overflow: hidden;
 }
+.heightNone{
+  height: 0;
+}
+.active {
+  opacity: 1 !important;
+}
+.hide {
+  display: none !important;
+  opacity: 0;
+}
 
+
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 body {
   background-color: rgb(239, 239, 239);
 }
@@ -18,23 +35,8 @@ ul {
 a {
   text-decoration: none;
 }
-.heightNone{
-  height: 0;
-}
-.hide {
-  display: none !important;
-  opacity: 0;
-}
 
-.active {
-  opacity: 1 !important;
-}
 
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
 /*顶部header*/
 
@@ -47,6 +49,7 @@ header.top {
   padding-bottom: 0.725rem;
   width: 100%;
   box-sizing: border-box;
+  transition: all .7s;
 }
 
 .whiteBar {
