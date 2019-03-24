@@ -62,7 +62,11 @@ header.whiteBar {
   padding-bottom: 0.3rem;
   color: #3d4451;
 }
+@keyframes bar {
+  from {
 
+  }
+}
 /*RS card标志*/
 
 .logoDiv {
@@ -110,6 +114,7 @@ header.whiteBar {
 
 .textNavBar a {
   padding-bottom: .375rem;
+  transition: all .2s;
 }
 
 /*墨镜背景图*/
