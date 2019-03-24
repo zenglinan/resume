@@ -26,7 +26,9 @@
 body {
   background-color: rgb(239, 239, 239);
 }
-
+a {
+  color: inherit;
+}
 body,
 ul {
   margin: 0;
@@ -50,6 +52,7 @@ header.top {
   width: 100%;
   box-sizing: border-box;
   transition: all .7s;
+  color: rgb(204, 202, 203);
 }
 
 header.whiteBar {
@@ -57,6 +60,7 @@ header.whiteBar {
   box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75);
   padding-top: 0.4rem;
   padding-bottom: 0.3rem;
+  color: #3d4451;
 }
 
 /*RS card标志*/
@@ -105,7 +109,6 @@ header.whiteBar {
 }
 
 .textNavBar a {
-  color: rgb(204, 202, 203);
   padding-bottom: .375rem;
 }
 
