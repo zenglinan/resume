@@ -10,7 +10,6 @@ a { text-decoration: none; }
 /*顶部header*/
 header.top { z-index: 1; position: fixed; padding-left: 6.4rem; padding-right: 6.575rem; padding-top: 1.275rem; padding-bottom: 0.725rem; width: 100%; box-sizing: border-box; transition: all .7s; color: rgb(204, 202, 203); }
 header.whiteBar { background-color: rgb(255, 255, 255); box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75); padding-top: 0.4rem; padding-bottom: 0.3rem; color: #3d4451; }
-@keyframes bar { from { } }
 /*RS card标志*/
 .logoDiv { float: left; padding-bottom: .5625rem; }
 .logo span { font-family: 'Fredoka One'; font-size: 1.875rem; }
@@ -18,28 +17,20 @@ header.whiteBar { background-color: rgb(255, 255, 255); box-shadow: 0px 3px 8px 
 .logo span.card { color: rgb(154, 157, 162); padding: .25rem; }
 /*顶部导航栏*/
 .textNavBar { font-family: 'Open Sans'; font-size: .8125rem; float: right; padding-top: .625rem; padding-bottom: .5rem; }
-.textNavBar li { float: left; margin-left: 1.0625rem; margin-right: 1.0625rem; position: relative; }
-.textNavBar li a::after {
-  width: 0;
-  transition: width .3s;
-  display: block;
-  height: .1875rem;
-  content: '';
-  top: 120%;
-  border-radius: 3px;
-  position: absolute;
-}
-.textNavBar li a:hover::after { 
-  width: 100%;
-  background: rgb(232, 103, 107);
-}
+.textNavBar ul.menu > li { float: left; margin-left: 1.0625rem; margin-right: 1.0625rem; position: relative; }
+.textNavBar li a::after { width: 0; transition: all .4s; display: block; height: .1875rem; content: ''; top: 120%; border-radius: 3px; position: absolute;}
+.textNavBar li a:hover::after { width: 100%; background: rgb(232, 103, 107); }
 .textNavBar li:nth-last-child(1) { padding-right: 0; }
 .textNavBar a { padding-bottom: .375rem; transition: all .2s; }
+.textNavBar ul.menu > li ul.menuChild {  visibility: hidden;margin-top: 6px; background: white; position: absolute; white-space: nowrap; color: rgb(61, 68, 81); top: 100%; right: 0; transform: translateX(-50%); opacity: 0; transition: all .4s; }
+.textNavBar ul.menu > li:hover ul.menuChild { box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); opacity: 1; transform: translateX(0%); visibility: visible;}
+.textNavBar ul.menu > li ul.menuChild li:hover { color: rgb(233, 111, 115); cursor: pointer; }
+.textNavBar ul.menuChild > li { padding: 10px 30px; }
 /*墨镜背景图*/
 div.bck { height: 32.25rem; width: 100%; position: absolute; left: 0; top: 0; background-image: url(./img/rs-cover-2-2-1-1.jpg); background-position: center; background-size: cover; z-index: -1; }
 div.bck .mask { height: 32.25rem; background-color: rgba(0, 0, 0, 0.7); }
 /*个人信息卡片*/
-.main { padding-top: 10.625rem; overflow: hidden; width: 58.125rem; margin-left: auto; margin-right: auto; }
+.main { margin-top: 10.625rem; overflow: hidden; width: 58.125rem; margin-left: auto; margin-right: auto; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
 div.userCard { background-color: rgb(255, 255, 255); padding-bottom: 4rem; }
 nav.logoNavBar { background-color: rgb(232, 103, 107) }
 img.avatar { width: 18.4375rem; height: 19.875rem; }
@@ -66,7 +57,7 @@ a.download:hover { box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.36); }
 p.selfIntroduction { font-family: 'Open Sans Light'; font-size: 1.25rem; line-height: 2.25rem; width: 58.125rem; margin: 1.625rem auto 0 auto; color: #000000; text-align: center; }
 /*技能条展示*/
 section.skillShow { width: 58.125rem; font-size: .875rem; font-family: 'Open Sans'; margin: 0 auto; }
-section.skillShow h2 { text-align: center; font-size: 2.125rem; color: rgb(61, 68, 81); font-family: 'Open Sans'; padding-top: 2.0625rem; font-weight: bold; }
+section.skillShow h2 { text-align: center; font-size: 2.125rem; color: rgb(61, 68, 81); font-family: 'Open Sans'; margin-top: 2.0625rem; font-weight: bold; }
 section.skillShow ul { background-color: rgb(255, 255, 255); box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.52); margin-bottom: 1rem; padding-top: 1.375rem; padding-bottom: 1.6875rem; }
 section.skillShow ul li { float: left; width: 50%; padding-bottom: 1.4375rem; box-sizing: border-box; }
 section.skillShow ul li:nth-child(odd) { padding-left: 3.125rem; }
@@ -75,7 +66,7 @@ section.skillShow ul li p { font-size: .875rem; font-family: 'Open Sans Light'; 
 section.skillShow ul li div.processBar { height: 5px; background-color: rgb(250, 225, 225); border-radius: 2px; }
 section.skillShow ul li div.processBar div.process { background-color: rgb(232, 103, 107); height: 100%; width: 50%; border-radius: 2px; }
 /*作品展示区*/
-section.portfolio { padding-top: 50px; }
+section.portfolio { margin-top: 50px; }
 div.portfolio-top { text-align: center; }
 div.portfolio-top h2 { font-size: 34px; color: rgb(61, 68, 81); font-family: 'Open Sans'; font-weight: bold; }
 div.portfolio-top .optionBar p span { cursor: pointer; }

@@ -1,3 +1,4 @@
+// ==========作品集的bar==========
 let option = document.getElementsByClassName("option")[0];
 let barInner = document.getElementsByClassName("bar-inner")[0];
 option.addEventListener('click', function (e) {

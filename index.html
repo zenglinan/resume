@@ -32,12 +32,19 @@
     <header class="top clearfix" id="topHeader">
       <div class="logoDiv"><a href="#" class="logo"><span class="rs">RS</span><span class="card">card</span></a></div>
       <nav class="textNavBar">
-        <ul class="clearfix">
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SKILLS</a></li>
-          <li><a href="#">EXPERIENCE</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">OTHER</a></li>
+        <ul class="clearfix menu">
+          <li><a class="navA" href="#about">ABOUT</a></li>
+          <li>
+            <a class="navA" href="#skill">SKILLS</a>
+            <ul class="menuChild">
+              <li>喝酒</li>
+              <li>口嗨</li>
+              <li>致敬</li>
+            </ul>
+          </li>
+          <li><a class="navA" href="#portfolio">PORTFOLIO</a></li>
+          <li><a class="navA" href="#">BLOG</a></li>
+          <li><a class="navA" href="#">OTHER</a></li>
         </ul>
       </nav>
     </header>
@@ -45,7 +52,7 @@
       <div class="mask"></div>
     </div>
     <section class="main">
-      <div class="userCard clearfix">
+      <div class="userCard clearfix" id="about">
         <img src="./img/peo.jpg" alt="我的图片" class="avatar">
         <div class="message">
           <span class="welcome">HELLO<span class="triangle"></span></span>
@@ -85,7 +92,7 @@
     <p class="selfIntroduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development.
       Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming
       languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
-    <section class="skillShow">
+    <section class="skillShow" id="skill">
       <h2>Professional Skills</h2>
       <ul class="clearfix">
         <li>
@@ -126,7 +133,7 @@
         </li>
       </ul>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio-top">
         <h2>Portfolio</h2>
         <div class="optionBar">
@@ -155,6 +162,7 @@
     siteMain.classList.add('active');
   },1000)
 </script>
+<script src="./srcollTo.js"></script>
 <script src="./scroll.js"></script>
 <script src="./bar.js"></script>
 </html>
