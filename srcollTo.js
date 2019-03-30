@@ -10,9 +10,5 @@ for (let i = 0; i < a.length; i++) {
       top: targetEle.getBoundingClientRect().top + window.scrollY - topHeader.offsetHeight,
       behavior: 'smooth',
     })
-    for (let j = 0; j < a.length; j++) {
-      a[j].classList.remove('active');
-    }
-    a[i].classList.add('active');
   })
 }
