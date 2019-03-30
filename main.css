@@ -20,6 +20,7 @@ header.whiteBar { background-color: rgb(255, 255, 255); box-shadow: 0px 3px 8px 
 .textNavBar ul.menu > li { float: left; margin-left: 1.0625rem; margin-right: 1.0625rem; position: relative; }
 .textNavBar li a::after { width: 0; transition: all .4s; display: block; height: .1875rem; content: ''; top: 120%; border-radius: 3px; position: absolute;}
 .textNavBar li a:hover::after { width: 100%; background: rgb(232, 103, 107); }
+.textNavBar li a.active::after { width: 100%; background: rgb(232, 103, 107); }
 .textNavBar li:nth-last-child(1) { padding-right: 0; }
 .textNavBar a { padding-bottom: .375rem; transition: all .2s; }
 .textNavBar ul.menu > li ul.menuChild {  visibility: hidden;margin-top: 6px; background: white; position: absolute; white-space: nowrap; color: rgb(61, 68, 81); top: 100%; right: 0; transform: translateX(-50%); opacity: 0; transition: all .4s; }
