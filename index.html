@@ -33,9 +33,9 @@
       <div class="logoDiv"><a href="#" class="logo"><span class="rs">RS</span><span class="card">card</span></a></div>
       <nav class="textNavBar">
         <ul class="clearfix menu">
-          <li><a class="navA" href="#about" >ABOUT</a></li>
+          <li><a class="navA" href="#about">ABOUT</a></li>
           <li>
-            <a class="navA" href="#skill" >SKILLS</a>
+            <a class="navA" href="#skill">SKILLS</a>
             <ul class="menuChild">
               <li>HTTP</li>
               <li>JavaScript</li>
@@ -44,8 +44,8 @@
               <li>Node.js</li>
             </ul>
           </li>
-          <li><a class="navA" href="#portfolio" >PORTFOLIO</a></li>
-          <li><a href="#"  >BLOG</a></li>
+          <li><a class="navA" href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#">BLOG</a></li>
           <li><a href="#">OTHER</a></li>
         </ul>
       </nav>
@@ -53,7 +53,7 @@
     <div class="bck">
       <div class="mask"></div>
     </div>
-    <section class="main offset" atarget >
+    <section class="main offset" atarget>
       <div class="userCard clearfix" id="about">
         <img src="./img/peo.jpg" alt="我的图片" class="avatar">
         <div class="message">
@@ -94,48 +94,48 @@
     <p class="selfIntroduction">Hello! I’m Robert Smith. Senior Web Developer specializing in front end development.
       Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming
       languages including JavaScript, SQL, and C. Stng background in project management and customer relations.</p>
-    <section class="skillShow offset" atarget  id="skill">
+    <section class="skillShow offset" atarget id="skill">
       <h2>Professional Skills</h2>
       <ul class="clearfix">
         <li>
           <p>HTML & CSS</p>
           <div class="processBar">
-            <div class="process"></div>
+            <div class="process" style="width: 70%"></div>
           </div>
         </li>
         <li>
           <p>JavaScript</p>
           <div class="processBar">
-            <div class="process"></div>
+            <div class="process" style="width: 50%"></div>
           </div>
         </li>
         <li>
           <p>jQuery</p>
           <div class="processBar">
-            <div class="process"></div>
+            <div class="process" style="width: 60%"></div>
           </div>
         </li>
         <li>
           <p>React.js</p>
           <div class="processBar">
-            <div class="process"></div>
-          </div>
-        </li>
-        <li>
-          <p>Vue.js</p>
-          <div class="processBar">
-            <div class="process"></div>
+            <div class="process" style="width: 5%"></div>
           </div>
         </li>
         <li>
           <p>Node.js</p>
           <div class="processBar">
-            <div class="process"></div>
+            <div class="process" style="width: 10%"></div>
+          </div>
+        </li>
+        <li>
+          <p>Vue.js</p>
+          <div class="processBar">
+            <div class="process" style="width: 40%"></div>
           </div>
         </li>
       </ul>
     </section>
-    <section class="portfolio offset" atarget  id="portfolio">
+    <section class="portfolio offset" atarget id="portfolio">
       <div class="portfolio-top">
         <h2>Portfolio</h2>
         <div class="optionBar">
@@ -157,13 +157,14 @@
   </div>
 </body>
 <script>
-  setTimeout(function(){
+  setTimeout(function () {
     loading.classList.add('hide');
     siteMain.classList.remove('heightNone');
     siteMain.classList.add('active');
-  },500)
+  }, 500)
 </script>
 <script src="./srcollTo.js"></script>
 <script src="./scroll.js"></script>
 <script src="./bar.js"></script>
+
 </html>
