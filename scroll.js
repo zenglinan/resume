@@ -1,7 +1,11 @@
 // ==========滚动时导航栏效果==========
+
 let aNav = document.getElementsByClassName('navA');
-let aTarget = document.querySelectorAll("[aTarget]");
-console.log()
+let aTarget = document.querySelectorAll("[atarget]");
+setTimeout(function(){
+  aTarget[0].classList.remove('offset');
+},600);
+aTarget[0].classList.add('slideUp');
 window.onscroll = function () {
   (window.scrollY !== 0) ?
     (topHeader.classList.add('whiteBar')) :
@@ -16,4 +20,5 @@ window.onscroll = function () {
     aNav[j].classList.remove("active");
   }
   aNav[index].classList.add("active");
+  aTarget[index].classList.remove('offset');
 }
