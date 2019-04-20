@@ -92,7 +92,6 @@ section.display .courselArrow {
 section.display .courselArrow:focus {
   outline: none;
 }
-section.display .swiper-button-prev {
-  right: 100%;
-  position: absolute;
+section.display .courselPicWrapper {
+  position: relative;
 }
