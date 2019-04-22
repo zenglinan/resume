@@ -40,6 +40,13 @@
     </div>
   </div>
   <div class="heightNone" id="siteMain">
+    <section id="comment" class="offset" atarget>
+      <form action="" id="postMessageForm">
+        <input type="text" name="leaveMessage" id="postMessage">
+        <input type="submit" value="提交">
+      </form>
+      <ul id="commentList"></ul>
+    </section>
     <header class="top clearfix" id="topHeader">
       <div class="logoDiv"><a href="#" class="logo"><span class="rs">RS</span><span class="card">card</span></a></div>
       <nav class="textNavBar">
@@ -158,7 +165,7 @@
             <img class="swiper-slide" src="./img/nav-page.jpg">
           </div>
           <div class="swiper-pagination"></div>
-      </div>
+        </div>
       </div>
     </section>
   </div>
@@ -167,6 +174,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="./srcollTo.js"></script>
 <script src="./scroll.js"></script>
-<script src="./bar.js"></script>
 <script src="./int-swiper.js"></script>
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
+<script src="./init-message.js"></script>
+<script src="./get-send-message.js"></script>
+
 </html>

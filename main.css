@@ -8,7 +8,7 @@ a { color: inherit; }
 body, ul { margin: 0; padding: 0; list-style: none; }
 a { text-decoration: none; }
 /*顶部header*/
-header.top { z-index: 1; position: fixed; padding-left: 6.4rem; padding-right: 6.575rem; padding-top: 1.275rem; padding-bottom: 0.725rem; width: 100%; box-sizing: border-box; transition: all .7s; color: rgb(204, 202, 203); }
+header.top { z-index: 1; position: fixed; min-width: 726px; padding-left: 6.4rem; padding-right: 6.575rem; padding-top: 1.275rem; padding-bottom: 0.725rem; width: 100%; box-sizing: border-box; transition: all .7s; color: rgb(204, 202, 203); }
 header.whiteBar { background-color: rgb(255, 255, 255); box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75); padding-top: 0.4rem; padding-bottom: 0.3rem; color: #3d4451; }
 /*RS card标志*/
 .logoDiv { float: left; padding-bottom: .5625rem; }
