@@ -22,8 +22,9 @@
       commentList.appendChild(li);
     },
     bindSumbitEvent() {
-      postMessageForm.addEventListener('submit', function (e) {
+      postMessageForm.addEventListener('submit', (e)=> {
         e.preventDefault();
+        console.log(this) // 这里如果不写成箭头函数  this有问题
         let message = this.messageInput.value;
         if (message === "") { alert("留言不能为空"); return; }
         else {
@@ -36,9 +37,12 @@
       })
     },
     loadMessage() {
+      console.log(model.fetch)
       model.fetch()
         .then(function (responseArr) {
+          console.log('here')
           let dataArr = responseArr.map((ele) => {
+            console.log(dataArr)
             return ele["_serverData"]["message"];
           })
           dataArr.forEach((dataEle) => {
@@ -50,14 +54,11 @@
     init() {
       this.view = view;
       this.model = model;
-      this.messageInput = postMessageForm.querySelector('#postMessage');
+      this.messageInput = postMessageForm.querySelector('textarea#postMessage');
       this.bindSumbitEvent();
       this.loadMessage();
     },
 
   }
-
-
-
   controller.init(view);
 }.call()

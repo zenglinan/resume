@@ -1,3 +1,4 @@
+textarea { resize: none; }
 #siteMain { transition: opacity 1.2s ease-in; opacity: 0; overflow: hidden; }
 .heightNone { height: 0; }
 .active { opacity: 1 !important; }
@@ -8,7 +9,7 @@ a { color: inherit; }
 body, ul { margin: 0; padding: 0; list-style: none; }
 a { text-decoration: none; }
 /*顶部header*/
-header.top { z-index: 1; position: fixed; min-width: 726px; padding-left: 6.4rem; padding-right: 6.575rem; padding-top: 1.275rem; padding-bottom: 0.725rem; width: 100%; box-sizing: border-box; transition: all .7s; color: rgb(204, 202, 203); }
+header.top { z-index: 99; position: fixed; min-width: 726px; padding-left: 6.4rem; padding-right: 6.575rem; padding-top: 1.275rem; padding-bottom: 0.725rem; width: 100%; box-sizing: border-box; transition: all .7s; color: rgb(204, 202, 203); }
 header.whiteBar { background-color: rgb(255, 255, 255); box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.75); padding-top: 0.4rem; padding-bottom: 0.3rem; color: #3d4451; }
 /*RS card标志*/
 .logoDiv { float: left; padding-bottom: .5625rem; }
@@ -70,29 +71,35 @@ section.skillShow ul li div.processBar div.process { background-color: rgb(232, 
 section.skillShow.offset ul li div.processBar div.process { transform: translateX(-100%); }
 [atarget] { transition: all 1s; }
 .offset { transform: translateY(80px); }
-section.display {
-  max-width: 620px;
-  margin: 16px auto;
-  position: relative;
-  margin-bottom: 40px;
+section.display { max-width: 620px; margin: 16px auto; position: relative; margin-bottom: 40px; }
+section.display h2 { text-align: center; font-size: 2.125rem; color: rgb(61, 68, 81); font-family: 'Open Sans'; margin-top: 3rem; margin-bottom: 2rem; font-weight: bold; z-index: -1; }
+section.display .courselArrow { width: 40px; height: 40px; border-radius: 50%; }
+section.display .courselArrow:focus { outline: none; }
+section.display .courselPicWrapper { position: relative; }
+section#comment {
+  padding: 3rem;
+  max-width: 40.75rem;
+  margin: 0 auto;
 }
-section.display h2 {
-  text-align: center;
-  font-size: 2.125rem;
-  color: rgb(61, 68, 81);
-  font-family: 'Open Sans';
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  font-weight: bold;
-}
-section.display .courselArrow {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-section.display .courselArrow:focus {
+section#comment textarea {
+  width: 100%;
   outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 205, 205);
+  box-sizing: border-box;
+  padding: 6px 6px;
 }
-section.display .courselPicWrapper {
-  position: relative;
+section#comment input[type="submit"] {
+  float: right;
+  outline: none;
+  background: rgba(29, 130, 255, 1);
+  padding: 5px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+}
+section#comment input[type="submit"]:hover {
+  background-color: rgb(75,151,241);
+  transition: all .2s;
 }
