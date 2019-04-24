@@ -22,9 +22,8 @@
       commentList.appendChild(li);
     },
     bindSumbitEvent() {
-      postMessageForm.addEventListener('submit', (e)=> {
+      postMessageForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log(this) // 这里如果不写成箭头函数  this有问题
         let message = this.messageInput.value;
         if (message === "") { alert("留言不能为空"); return; }
         else {
@@ -37,16 +36,12 @@
       })
     },
     loadMessage() {
-      console.log(model.fetch)
       model.fetch()
         .then(function (responseArr) {
-          console.log('here')
           let dataArr = responseArr.map((ele) => {
-            console.log(dataArr)
             return ele["_serverData"]["message"];
           })
           dataArr.forEach((dataEle) => {
-            console.log(this) // 老师为何这里的this指向window
             controller.show(dataEle);
           })
         })
@@ -57,8 +52,9 @@
       this.messageInput = postMessageForm.querySelector('textarea#postMessage');
       this.bindSumbitEvent();
       this.loadMessage();
+      this.model = model
     },
 
   }
-  controller.init(view);
+  controller.init(view, model);
 }.call()
