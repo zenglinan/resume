@@ -22,13 +22,13 @@
         let message = this.messageInput.value;
         if (message === "") { alert("留言不能为空"); return; }
         else {
+          this.addMessage(message);
           model.save(message)
-            .then(function (response) {
+            .then((response) => {
               alert('Send success!');
               this.messageInput.value = "";
             })
         }
-        this.addMessage(message);
       })
     },
     loadMessage() {
@@ -55,7 +55,7 @@
       this.loadMessage();
       this.model = model
     },
-    addMessage(message){
+    addMessage(message) {
       let li = document.createElement('li');
       li.textContent = message;
       commentList.prepend(li)
