@@ -16,11 +16,6 @@
   let controller = {
     view: null,
     model: null,
-    show(dataEle) {
-      let li = document.createElement('li');
-      li.textContent = dataEle;
-      commentList.appendChild(li);
-    },
     bindSumbitEvent() {
       postMessageForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -33,18 +28,24 @@
               this.messageInput.value = "";
             })
         }
+        this.addMessage(message);
       })
     },
     loadMessage() {
       model.fetch()
         .then(function (responseArr) {
-          let dataArr = responseArr.map((ele) => {
+          let dataArr = responseArr.reverse().map((ele) => {
             return ele["_serverData"]["message"];
           })
           dataArr.forEach((dataEle) => {
             controller.show(dataEle);
           })
         })
+    },
+    show(dataEle) {
+      let li = document.createElement('li');
+      li.textContent = dataEle;
+      commentList.appendChild(li);
     },
     init() {
       this.view = view;
@@ -54,7 +55,11 @@
       this.loadMessage();
       this.model = model
     },
-
+    addMessage(message){
+      let li = document.createElement('li');
+      li.textContent = message;
+      commentList.prepend(li)
+    }
   }
   controller.init(view, model);
 }.call()
