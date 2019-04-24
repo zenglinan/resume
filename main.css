@@ -103,3 +103,13 @@ section#comment input[type="submit"]:hover {
   background-color: rgb(75,151,241);
   transition: all .2s;
 }
+section#comment #commentList {
+  margin-top: 30px;
+}
+section#comment #commentList li{
+  padding: 10px 4px;
+  border-top: 1px dashed rgb(204, 204, 204);
+}
+section#comment #commentList li:nth-last-child(1){
+  border-bottom: 1px dashed rgb(204, 204, 204);
+}
